@@ -1,5 +1,8 @@
 // api/index.js
-const app = require('../app');
-const serverless = require('serverless-http');
+import app from '../app';
 
-module.exports = serverless(app); 
+// const app = require('../app');
+// const serverless = require('serverless-http');
+
+// module.exports = serverless(app); // ✅ correct export
+export default app; // ✅ correct export

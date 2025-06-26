@@ -6,6 +6,8 @@ const { getMarsRoverPhotos } = require('../controllers/controller');
 const { getAsteroids } = require('../controllers/controller');
 const { getEarth } = require('../controllers/controller');
 
+
+
 router.get('/apod', getAPOD); // Astronomy Picture of the Day
 
 router.get('/mars-rover-manifests/:roverName', getMarsRoverManifests); // Mars Rover Manifests
